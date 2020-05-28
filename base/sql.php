@@ -24,7 +24,7 @@ function select($field, $from, $where,$other="")
     if($where!=""){
         $where = "WHERE ".$where." ";
     }
-    //echo "SELECT $field FROM $from $where.$other";
+    //echo "SELECT $field FROM $from ".$where.$other;
     return query("SELECT $field FROM $from ".$where.$other);
 }
 
